@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="gym.css" />
+  </head>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="[correct integrity value]"
+  />
+
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div><img src="/gmy/img/fitness logo.png" alt="" /></div>
+
+      <input type="checkbox" id="check" />
+      <label for="check" id="menuBar">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <ul id="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="class.html">Classes</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><button id="Join" >Join Us</button></li>
+      </ul>
+    </nav>
+
+    <div class="banner-container">
+      <div>
+        <img src="/gmy/img/girl gym.webp" alt="" />
+      </div>
+      <div class="banner-button">
+        <h1>Revitalize your body</h1>
+        <h4>
+          Fall in love with taking care of yourself: <br />
+          mind, body, and spirit.
+        </h4>
+        <button id="get" type="submit">Get Join</button>
+        <button id="free" type="menu">Free Trial &#8594;</button>
+      </div>
+
+      <div class="logo">
+        <div class="whatsapp"></div>
+        <div class="facebook"></div>
+        <div class="youtube"></div>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div id="join-form" class="join-form" style="display: none;">
+      <div class="form-content">
+          <h2>Join Fitness Star Gym</h2>
+          <form id="gym-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+              <label for="address">Address:</label>
+              <textarea id="address" name="address" placeholder="Address" required></textarea>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone no.">
+
+              <label for="membershipType">Membership Type:</label>
+              <select id="membershipType" name="membershipType" required>
+                  <option value="#">Choose your preference</option>
+                  <option value="basic">Basic</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+              </select>
+              <label for="Trainer">Personal Trainer:</label>
+              <select id="Trainer" name="Trainer" required>
+                  <option value="#">Select your opinion</option>
+                  <option value="basic">Yes</option>
+                  <option value="intermediate">No</option>
+              </select>
+
+              <div class="form-buttons">
+                  <button type="button" onclick="saveForm()">Save</button>
+                  <button type="button" onclick="closeForm()">Close</button>
+              </div>
+          </form>
+      </div>
+  </div>
+
+
+    <!-- card -->
+    <div class="card">
+      <div class="card div1">
+        <img src="/gmy/img/weight-loss.png" alt="" />
+        <div class="text">Weight Loss</div>
+      </div>
+      <div class="card div2">
+        <img src="/gmy/img/classic yoga.png" alt="" />
+        <div class="text">Classic Yoga</div>
+      </div>
+      <div class="card div3">
+        <img src="/gmy/img/cycling.png" alt="" />
+        <div class="text">Cycling</div>
+      </div>
+      <div class="card div4">
+        <img src="/gmy/img/body-building.png" alt="" />
+        <div class="text">body-building</div>
+      </div>
+      <div class="card div5">
+        <img src="/gmy/img/Hypertrophy.png" alt="" />
+        <div class="text">Hypertrophy</div>
+      </div>
+      <div class="card div6">
+        <img src="/gmy/img/Running.png" alt="" />
+        <div class="text">Running</div>
+      </div>
+    </div>
+    <div class="Subscription">
+      <div class="image-container">
+        <h1>Subscription Plans</h1>
+        <div class="plan">
+          <div class="card-1">
+            <h3>Basic</h3>
+            <p>for 12 months</p>
+            <h2>800/month</h2>
+            <p>for streaming</p>
+            <button class="Select-Plan">Select Plan</button>
+          </div>
+          <div class="card-1">
+            <h3>Intermediate</h3>
+            <p>for 12 months</p>
+            <h2>1000/month</h2>
+            <p>for streaming</p>
+            <button class="Select-Plan">Select Plan</button>
+          </div>
+          <div class="card-1">
+            <h3>Advance</h3>
+            <p>for 12 months</p>
+            <h2>1500/month</h2>
+            <p>for streaming</p>
+            <button class="Select-Plan">Select Plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fitness-bag">
+      <div class="fitness-club"></div>
+      <div class="sessions">
+        <div class="services">
+          <div class="service">
+            <img src="/gmy/img/gm.png" alt="" />
+            <h4>Good Management</h4>
+            <p>what hurts today makes you stronger tomorrow</p>
+          </div>
+          <div class="service">
+            <img src="/gmy/img/ps1.jpg" alt="" />
+            <h4>Pracice Sessions</h4>
+            <p>Motivation is what gets you started.</p>
+          </div>
+          <div class="service">
+            <img src="/gmy/img/ft2.png" alt="" />
+            <h4>personal Trainers</h4>
+            <p>If it doesn't challenge you, it won't change you</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yellow"></div>
+    <div class="best-facility">
+      <div class="fac">
+        <img src="/gmy/img/boy.jpg" alt="" />
+        <p>
+          Best place for body <br />
+          transformation
+        </p>
+      </div>
+      <div class="fac">
+        <img src="/gmy/img/girl1.jpg" alt="" />
+        <p>
+          Best cross fit gym <br />
+          in this area
+        </p>
+      </div>
+      <div class="fac">
+        <img src="/gmy/img/builder.jpg" alt="" />
+        <p>
+          Best Bodybuilding gym in <br />
+          this city it has all required <br />
+          equipment
+        </p>
+      </div>
+    </div>
+    <div class="more">
+      <div class="goal orange">
+        <div class="companyLogo">
+          <img src="/gmy/img/fitness logo.png" alt="" />
+        </div>
+        <p>
+          Prioritize Your Fitness Goals <br />
+          with our world class services
+        </p>
+      </div>
+      <div class="contact-details">
+        <div class="contact">CONTACT</div>
+        <div class="contact">COMPANY</div>
+        <div class="contact">MORE</div>
+        <div class="contact">About</div>
+        <div class="contact">HelpFAQs</div>
+        <div class="contact">Program</div>
+        <div class="contact">Careers</div>
+        <div class="contact">Press</div>
+        <div class="contact">Plans</div>
+        <div class="contact">Blogs</div>
+        <div class="contact">Mobile</div>
+        <div class="contact">Method</div>
+      </div>
+      <div class="tags">
+        <span class="orange underline">Popular Tags</span>
+        <div class="tag-heading">
+          <button>ABS</button>
+          <button>Workout</button>
+          <button class="bg-orange">Nutrition</button>
+          <button>GYM</button>
+          <button>Boxing</button>
+          <button class="bg-orange">Trainer</button>
+          <button class="bg-orange">Facilities</button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-orange">@copy: CopyRight All Rights Reserved</footer>
+    <script src="gym.js"></script>
+  </body>
+</html>

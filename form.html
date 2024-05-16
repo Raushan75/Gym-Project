@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h4>Form</h4>
+    <div class="Plant">
+        <h1>SUBSCRIPTION PLAN</h1>
+    </div>
+    <div class="Formate">
+       <div class="Form">
+        <form action="" class="label" id="myForm">
+            <label for="" class="full">Full Name:</label><br>
+            <input type="text"><br>
+            <label for="" class="full">Email:</label><br>
+            <input type="text"><br>
+            <label for="" class="full">Mobile Number:</label><br>
+            <input type="tel"><br>
+            <label for="" class="full">Duration:</label><br>
+            <input type="radio" value="Monthly" name="userPlan">Monthly
+            <input type="radio" value="Yearly" name="userPlan">Yearly <br>
+            <label for="" class="full">Mode of Payment:</label><br>
+            <input type="radio" value="cash" name="userPayment">Cash 
+            <input type="radio" value="Online" name="userPayment">Online <br>
+            <label for="" class="full">Personal Training: *free with yearly plan</label><br>
+            <input type="radio" value="Required" name="userTraining">Required <br>
+            <input type="radio" value="Not Required" name="userTraining">Not Required <br>
+            <input type="checkbox">I accept all terms and conditions <br>provided in the form <br>
+            <button class="Buy">BUY PLAN</button>
+            <button id="Close" onclick="closeNewForm()">CLOSE</button>
+        </form>
+       </div>
+    </div>
+    <script src="gym.js"></script>
+</body>
+</html>
